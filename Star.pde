@@ -5,7 +5,7 @@ class Star extends Floater
   corners = 4;  //the number of corners, a triangular floater has 3   
   xCorners = new int[] {-3, 0, 3, 0};   
   yCorners = new int[] {0, 3, 0, -3};   
-  myColor = color(120, 10, 140);   
+  myColor = color(131, 238, 255);   
   myCenterX = (Math.random()*500); 
   myCenterY = (Math.random()*500); //holds center coordinates   
   myXspeed = 0; 
