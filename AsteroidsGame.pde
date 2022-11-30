@@ -4,6 +4,9 @@ public void setup()
 {
   size(500, 500);
   ship = new Spaceship();
+  for (int i = 0; i <stars.length; i++) {
+    stars[i] = new Star();
+  }
   background(80);
   
 }
