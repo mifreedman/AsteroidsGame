@@ -1,5 +1,5 @@
 Spaceship ship;
-Star [] stars = new Star[100];
+Star [] stars = new Star[175];
 public void setup()
 {
   size(500, 500);
@@ -7,17 +7,17 @@ public void setup()
   for (int i = 0; i <stars.length; i++) {
     stars[i] = new Star();
   }
-  background(80);
+  background(20);
   
 }
 public void draw()
 {
-  background(80);
-  ship.show();
-  ship.move();
+  background(20);
   for (int i = 0; i < stars.length; i++) {
     stars[i].show();
   }
+  ship.show();
+  ship.move();
 }
 public void keyPressed () {
   if (key == 's') {
@@ -36,5 +36,14 @@ public void keyPressed () {
   }
   if (key == 'w') {
     ship.accelerate(1);
+  }
+  if (key == 'r') {
+    ship.setMyColor(250, 12, 22);
+  }
+  if (key == 'g') {
+    ship.setMyColor(182, 255, 0);
+  }
+  if (key == 'b') {
+    ship.setMyColor(12, 12, 250);
   }
 }
