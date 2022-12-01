@@ -47,3 +47,7 @@ public void keyPressed () {
     ship.setMyColor(12, 12, 250);
   }
 }
+
+  if (key == 'c'){
+  ship.accelerate(-1);
+  }
