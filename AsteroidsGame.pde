@@ -20,7 +20,7 @@ public void draw()
   ship.move();
 }
 public void keyPressed () {
-  if (key == 's') {
+  if (key == 'h') {
      ship.setCenterX((Math.random()*420)+30);
      ship.setCenterY((Math.random()*420)+30);
      ship.setMyPointDirection(Math.random()*360);
@@ -46,7 +46,7 @@ public void keyPressed () {
   if (key == 'b') {
     ship.setMyColor(12, 12, 250);
   }
-    if (key == 'c'){
+    if (key == 's'){
   ship.accelerate(-1);
   }
 
