@@ -5,14 +5,15 @@ public void setup()
 {
   size(500, 500);
   ship = new Spaceship();
+   droids = new ArrayList <Asteroid>();
   for (int i = 0; i <stars.length; i++) {
     stars[i] = new Star();
   }
   for (int j = 0; j < 8; j++) {
     droids.add(new Asteroid());
-  background(20);
-  
-}
+   }
+  background(20);  
+ }
 public void draw()
 {
   background(20);
