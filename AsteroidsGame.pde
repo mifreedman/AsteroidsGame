@@ -1,5 +1,6 @@
 Spaceship ship;
 Star [] stars = new Star[175];
+ArrayList <Asteroid> droids;
 public void setup()
 {
   size(500, 500);
@@ -7,6 +8,8 @@ public void setup()
   for (int i = 0; i <stars.length; i++) {
     stars[i] = new Star();
   }
+  for (int j = 0; j < 8; j++) {
+    droids.add(new Asteroid());
   background(20);
   
 }
@@ -18,6 +21,15 @@ public void draw()
   }
   ship.show();
   ship.move();
+  for (int j = 0; j < droids.size(); j++) {
+    droids.get(j).show();
+    droids.get(j).move();
+  }
+  for (int a = 0; a < droids.size(); a++) {
+    if (dist((float)droids.get(a).getMyCenterX(), (float)droids.get(a).getMyCenterY(), (float)ship.getMyCenterX(), (float)ship.getMyCenterY()) < 15) {
+    droids.remove(a);
+    }
+  } 
 }
 public void keyPressed () {
   if (key == 'h') {
