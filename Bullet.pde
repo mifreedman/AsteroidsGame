@@ -19,10 +19,4 @@ class Bullet extends Floater
     myCenterX += myXspeed;
     myCenterY += myYspeed;
   }
-  public void shoot() {
-    //myCenterX = ship.getMyCenterX();
-    //myCenterY = ship.getMyCenterY();
-    show();
-    move();
-  }
 }
