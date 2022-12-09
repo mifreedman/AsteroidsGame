@@ -2,14 +2,14 @@ class Asteroid extends Floater
 {
   protected double rotSpeed;
   public Asteroid() {
-    corners = (int)(Math.random()*8)+2; 
+    corners = (int)(Math.random()*5)+4; 
     xCorners = new int[corners];   
     yCorners = new int[corners];
     for (int i = 1; i < corners; i+=2) {
-      xCorners[i] = (int)(Math.random()*3)+10;   
-      yCorners[i] = (int)(Math.random()*20)-10;
-      xCorners[i-1] = (int)(Math.random()*20)-10;   
-      yCorners[i-1] = (int)(Math.random()*3)+10;
+      xCorners[i] = (int)(Math.random()*3)+15;   
+      yCorners[i] = (int)(Math.random()*30)-15;
+      xCorners[i-1] = (int)(Math.random()*30)-15;   
+      yCorners[i-1] = (int)(Math.random()*3)+15;
       rotSpeed = (Math.random()*5)-2;
     }
     myColor = color(80, 80, 80);   
