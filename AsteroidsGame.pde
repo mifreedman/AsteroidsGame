@@ -61,7 +61,7 @@ public void draw()
       text("GOOD JOB!", 150, 250, 500, 500);
     }
   fill(255);
-  text("Asteroids count: " + droids.size(), 20, 470, 500, 500);
+  text("Debris count: " + droids.size(), 20, 470, 500, 500);
 }
 public void keyPressed () {
   if (key == 'h') {
